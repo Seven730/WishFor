@@ -1,0 +1,138 @@
+.header {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.list {
+  padding: 1rem;
+  background-color: rgb(243, 243, 243);
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 2px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.list-items {
+  list-style: none;
+  padding: 0;
+}
+
+.list-items__fallback {
+  color: black;
+  text-align: center;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0.5rem;
+  margin: 1rem 0;
+  height: 104px;
+  background-color: var(--green);
+  transition: 0.4s ease;
+}
+
+.item-date {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 5.5rem;
+  height: 5.5rem;
+  border: 1px solid #ececec;
+  background-color: #d5d5d5;
+  color: black;
+  border-radius: 0px;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.item-date--product {
+  cursor: pointer;
+}
+
+.item-date__month {
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.item-date__year {
+  font-size: 0.75rem;
+}
+
+.item-date__day {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.item__description span {
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+.item h2 {
+  font-size: 1rem;
+  flex: 1;
+  margin: 0 0 0.3rem 0;
+}
+
+.item__description {
+  display: flex;
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  flex: 1;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.item__description:hover {
+  color: white;
+  filter: drop-shadow(0 0 0.75rem rgb(0 0 0 / 25%));
+  transition: 0.4s ease;
+}
+
+.item__price {
+  font-size: 1rem;
+  font-weight: bold;
+  color: black;
+  background-color: #d5d5d5;
+  border: 1px solid white;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+
+.item__delete {
+  position: absolute;
+  right: 8px;
+  font-size: 26px;
+  top: 0;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.item__delete:hover {
+  color: white;
+  transition: 0.4s ease;
+}
+
+@media (min-width: 580px) {
+  .item__description {
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+  }
+
+  .item__description h2 {
+    font-size: 1.25rem;
+  }
+
+  .item__price {
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+  }
+}

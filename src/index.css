@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+
+:root {
+  --font-fira-sans: 'Fira Sans', sans-serif;
+  --font-size-s: 12px;
+  --font-size-m: 18px;
+  --font-size-l: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+
+  --green: #85d177;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: inherit;
+  outline: none;
+}
+
+html {
+  font-family: var(--font-fira-sans);
+}
+
+body {
+  margin: 0;
+  background-color: #3f3f3f;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
