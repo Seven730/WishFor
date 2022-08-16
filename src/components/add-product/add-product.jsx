@@ -6,7 +6,6 @@ import Input from "../atoms/input/input";
 import WishlistContext from "../../store/wishlist-context";
 
 function AddProduct() {
-  // TODO: Use useReducer for product state
   const [productName, setProductName] = useState("");
   const [productPrice, setProductPrice] = useState(0.01);
 

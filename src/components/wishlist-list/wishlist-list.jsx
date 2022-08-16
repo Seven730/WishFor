@@ -1,6 +1,6 @@
-import AddButton from "../atoms/add-button/add-button";
 import Wishlist from "../wishlist/wishlist";
 import AddWishlist from "../add-wishlist/add-wishlist";
+import AddButton from "../atoms/add-button/add-button";
 
 function WishlistList({ data }) {
   return (

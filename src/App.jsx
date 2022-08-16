@@ -24,7 +24,6 @@ function App() {
 
     if (localStorageData && localStorageData !== "undefined") {
       const localStorageDataJSON = JSON.parse(localStorageData);
-
       ctx.setInitialData(localStorageDataJSON);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps

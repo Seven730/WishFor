@@ -3,7 +3,7 @@ import classNames from "classnames";
 
 import "./modal.css";
 
-import { Portal } from "../../../utils/utils";
+import { Portal } from "../../../helpers/helpers";
 
 const pfx = "modal";
 
@@ -26,7 +26,10 @@ function Modal({ children, content, title }) {
   return (
     <>
       {React.cloneElement(children, {
-        onClick: showModal,
+        onClick: (event) => {
+          if (children.props.onClick) children.props.onClick();
+          showModal();
+        },
       })}
       <Portal>
         <div className={modalClasses} id={id}>

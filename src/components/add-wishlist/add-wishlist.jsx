@@ -26,7 +26,7 @@ function AddWishlist() {
         labelText="Nazwa listy"
         placeholderText="Wpisz nazwę listy"
       />
-      <Button onClick={handleSubmit} text="Zatwierdź" />
+      <Button onClick={handleSubmit} text="Zatwierdź" disabled={!wishlistName} />
     </>
   );
 }
