@@ -1,7 +1,7 @@
 .return-button {
   margin-top: 16px ;
   font-family: inherit;
-  font-size: var(--font-size-m);
+  font-size: 18px;
   padding: 12px 16px;
   border-radius: 0;
   background-color: var(--green);

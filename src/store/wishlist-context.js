@@ -46,7 +46,7 @@ export const WishlistContextProvider = ({ children }) => {
     if (!name || wishlistsDataNames.includes(name)) return;
 
     const newList = {
-      id: wishlistsData.length,
+      id: wishlistsData[wishlistsData.length - 1].id + 1,
       title: name,
       date: new Date(Date.now()),
       products: [],
@@ -84,7 +84,7 @@ export const WishlistContextProvider = ({ children }) => {
     }).format(price);
 
     const newProduct = {
-      id: selectedWishlist.products.length,
+      id: selectedWishlist.products[selectedWishlist.products.length - 1].id + 1,
       title: name,
       price: formattedPrice,
       date: new Date(Date.now()),

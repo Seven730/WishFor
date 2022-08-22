@@ -26,7 +26,7 @@ function Modal({ children, content, title }) {
   return (
     <>
       {React.cloneElement(children, {
-        onClick: (event) => {
+        onClick: () => {
           if (children.props.onClick) children.props.onClick();
           showModal();
         },
